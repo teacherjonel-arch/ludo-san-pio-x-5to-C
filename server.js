@@ -9,7 +9,7 @@ const server=http.createServer(app);
 const io=new Server(server);
 const PORT=process.env.PORT||3000;
 const ADMIN_PASSWORD='1234';
-const DATA_FILE=path.join(__dirname,'data','questions.json');
+const DATA_FILE=path.join(__dirname,'questions.json');
 
 app.use(express.static(path.join(__dirname,'public')));
 
